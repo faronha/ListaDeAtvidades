@@ -20,8 +20,8 @@ document.getElementById("resultado").textContent = "A soma é: " + soma
 
 //----------//
 
-const numeroConcat = prompt("2 - Concatenação: Digite um número:")
-console.log("O número que você digitou foi: " + numeroConcat + " (Este é o número como texto)")
+const Concatenacao = prompt("2 - Concatenação: Digite um número:")
+console.log("O número que você digitou foi: " + Concatenacao + " (Este é o número como texto)")
 
 const idade = Number(prompt("3 - Maioridade: Digite sua idade:"))
 if (idade >= 18) {
@@ -32,23 +32,23 @@ if (idade >= 18) {
 
 //----------//
 
-const frase2 = prompt("Digite uma frase:")
+const frase = prompt("Digite uma frase:")
 const palavraParaSubstituir = prompt("Digite uma palavra da frase para substituir:")
 const novaPalavra = prompt("Por qual palavra você quer substituir?")
-const fraseModificada = frase2.replace(palavraParaSubstituir, novaPalavra)
+const fraseModificada = frase.replace(palavraParaSubstituir, novaPalavra)
 console.log("Frase modificada:", fraseModificada)
 
 const palavraParaVerificar = prompt("Digite uma palavra para verificar se ela existe na frase:")
-console.log("A palavra " + palavraParaVerificar + " existe na frase? " + frase2.includes(palavraParaVerificar))
+console.log("A palavra " + palavraParaVerificar + " existe na frase? " + frase.includes(palavraParaVerificar))
 
 //----------//
 
-const numeroAleatorio = Math.floor(Math.random() * 10) + 1
+const Aleatorio = Math.floor(Math.random() * 10) + 1
 const palpite = Number(prompt("Tente adivinhar o número entre 1 e 10:"))
-if (palpite === numeroAleatorio) {
+if (palpite === Aleatorio) {
     alert("Parabéns! Você acertou!")
 } else {
-    alert("Ops, você errou. O número era " + numeroAleatorio + ".")
+    alert("Ops, você errou. O número era " + Aleatorio + ".")
 }
 
 //----------//
@@ -68,15 +68,15 @@ dataAniversario.setMonth(mesAniversario - 1)
 dataAniversario.setDate(diaAniversario)
 
 const hojeAgora = new Date()
-const diferencaMs = dataAniversario.getTime() - hojeAgora.getTime()
+const diferencaMeses = dataAniversario.getTime() - hojeAgora.getTime()
 
-if (diferencaMs < 0) {
+if (diferencaMeses < 0) {
     dataAniversario.setFullYear(hojeAgora.getFullYear() + 1)
     const diferencaMesesProximoAno = dataAniversario.getTime() - hojeAgora.getTime()
     const diasRestantes = Math.ceil(diferencaMesesProximoAno / (1000 * 60 * 60 * 24))
     console.log("Faltam " + diasRestantes + " dias para o seu aniversário!")
 } else {
-    const diasRestantes = Math.ceil(diferencaMs / (1000 * 60 * 60 * 24))
+    const diasRestantes = Math.ceil(diferencaMeses / (1000 * 60 * 60 * 24))
     if (diasRestantes === 0) {
         alert("Feliz aniversário!")
     } else {
