@@ -1,0 +1,78 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 24px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.card {
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.example {
+    border: 1px dashed #bbb;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fafafa;
+}
+
+.note {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.parent {
+    font-size: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.txt-px {
+    font-size: 24px;
+}
+
+.txt-em {
+    font-size: 1.5em;
+}
+
+.txt-rem {
+    font-size: 1.5rem;
+}
+
+code {
+    background: #f3f3f3;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+.legend {
+    color: #555;
+}
+
+a {
+    color: #0b72ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
