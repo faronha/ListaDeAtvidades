@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lampada</title>
+</head>
+<body>
+    <h1>Clique na lampada</h1>
+    <img src="img/lampada-apagada.png" id="lampada" style="cursor:pointer;">
+
+    <script>
+    const lampada = document.getElementById("lampada")
+
+    lampada.addEventListener("click", function() {
+        if (lampada.src.includes("lampada-apagada.png")) {
+            lampada.src = "img/lampada-acesa.png"
+            
+        } else {
+            lampada.src = "img/lampada-apagada.png"
+            
+        }
+    })
+</script>
+</body>
+</html>

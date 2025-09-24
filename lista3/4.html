@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Foto de Perfil</title>
+</head>
+    <link rel="stylesheet" href="4.css">
+<body>
+
+    <div class="fundo">
+        
+            <div class="perfil">
+                <h1>Foto de Perfil</h1>
+                <img id="perfil" src="img/sasuke.jpg">
+                <button id="trocarBotao">Trocar Foto</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <script>
+    const perfil = document.getElementById("perfil");
+    const btn = document.getElementById("trocarBotao");
+
+    btn.addEventListener("click", function() {
+        if (perfil.src.endsWith("sasuke.jpg")) {
+            perfil.src = "img/naruto.jpg";
+        } else {
+            perfil.src = "img/sasuke.jpg";
+        }
+    });
+</script>1
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Responsivo com CSS</title>
+
+<body>
+    <h1>Banner Responsivo com CSS</h1>
+    <img id="celular" class="banner" src="img/batmanCelular.jpg" alt="Banner Mobile">
+    <img id="tablet" class="banner" src="img/coringa.jpg" alt="Banner Tablet">
+    <img id="pc" class="banner" src="img/alerquina.jpg" alt="Banner Desktop">
+</body>
+<style>
+    .banner {
+        width: 100%;
+        max-width: 800px;
+        display: none;
+        margin: 40px auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 599px) {
+        #celular {
+            display: block;
+        }
+    }
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+        #tablet {
+            display: block;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        #pc {
+            display: block;
+        }
+    }
+</style>
+</head>
+
+</html>

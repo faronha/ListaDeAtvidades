@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mostrar e shiu</title>
+</head>
+<body>
+    <button id="apertarBotao">Mostrar/Shiu</button>
+    <br><br>
+    <img id="imagem" src="img/susto.jpg" style="display:none;">
+
+    <script>
+        const botao= document.getElementById("apertarBotao")
+        const img = document.getElementById("imagem")
+
+        botao.addEventListener("click", function() {
+            if (img.style.display == "none") {
+                img.style.display = "block"
+            } else {
+                img.style.display = "none"
+            }
+        })
+    </script>
+</body>
+</html>

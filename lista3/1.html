@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>troca de bunner</title>
+</head>
+<body>
+    <h1>O banner vai trocar</h1>
+    <img src="img/wallpaperCelular.jpg" alt="Banner" id="banner">
+
+    <script>
+        const banner = document.getElementById("banner");
+        function trocaImg() {
+            if (window.innerWidth < 600) {
+                banner.src = "img/wallpaperCelular.jpg";
+                
+            } else {
+                banner.src = "img/wallpaperPC.jpg";
+                
+            }
+        }
+        trocaImg();
+        window.addEventListener("resize", trocaImg);
+    </script>
+</body>
+</html>

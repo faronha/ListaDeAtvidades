@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Galeria</title>
+    <link rel="stylesheet" href="5.css">
+</head>
+<body>
+    <h1>Mini Galeria</h1>
+    <div class="galeria">
+        <img src="img/ciclop.jpg" alt="ciclop" id="miniCiclop">
+        <img src="img/aizen.jpg" alt="aizen" id="miniAizen">
+        <img src="img/guts.jpg" alt="guts" id="miniGuts">
+    </div>
+    <img id="grande" src="img/ciclop.jpg" alt="Imagem grande">
+
+    <script>
+        const grande = document.getElementById("grande")
+        const miniCiclop = document.getElementById("miniCiclop")
+        const miniAizen = document.getElementById("miniAizen")
+        const miniGuts = document.getElementById("miniGuts")
+
+        miniCiclop.addEventListener("click", function() {
+            grande.src = "img/ciclop.jpg";
+        })
+        miniAizen.addEventListener("click", function() {
+            grande.src = "img/aizen.jpg";
+        })
+        miniGuts.addEventListener("click", function() {
+            grande.src = "img/guts.jpg";
+        })
+    </script>
+</body>
+</html>
